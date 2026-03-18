@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer base {
+  @media print {
+    body {
+      background-color: white !important;
+      color: black !important;
+    }
+    
+    .print\:hidden {
+      display: none !important;
+    }
+    
+    .print\:block {
+      display: block !important;
+    }
+    
+    main {
+      margin-left: 0 !important;
+      padding: 0 !important;
+    }
+    
+    header, aside {
+      display: none !important;
+    }
+  }
+}
